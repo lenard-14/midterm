@@ -1,0 +1,307 @@
+/* General Styles */
+body {
+    background: url(garage.jpg) no-repeat center fixed; 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+p{
+    color: white;
+}
+li{
+    color: white;
+}
+/* Hero Section */
+.hero {
+    background-color: #444;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Featured Cars Section */
+.featured-cars {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.car-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-item {
+    width: 250px;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* Style for the entire about-us section */
+.about-us {
+    padding-top: 100px; /* Increase top padding for more vertical space */
+    padding-bottom: 100px; /* Increase bottom padding */
+    text-align: center; /* Center the text content within the section */
+}
+
+/* Style for the container to control width */
+.about-us .container {
+    max-width: 800px; /* Adjust this value to control the maximum width of the content */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Increase font size for headings */
+.about-us h1,
+.about-us h2 {
+    font-size: 2.5em; /* Adjust as needed */
+    margin-bottom: 20px; /* Add some space below headings */
+}
+
+/* Increase font size for paragraphs */
+.about-us p {
+    font-size: 1.2em; /* Adjust as needed */
+    line-height: 1.6; /* Improve readability with line height */
+    margin-bottom: 15px; /* Add space between paragraphs */
+}
+
+/* Increase font size for list items */
+.about-us ul li {
+    font-size: 1.2em; /* Adjust as needed */
+    margin-bottom: 10px;
+    list-style-position: inside; /* Keep bullet points within the text flow */
+}
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #3b3d3f; /* Bootstrap primary color */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+header nav ul li a:hover {
+    color: #e9ecef; /* Lighter color on hover */
+}
+
+/* Contact Us Section Styling */
+.contact-us {
+    background-color: white;
+    padding: 50px;
+    margin: 30px auto;
+    max-width: 700px; /* Slightly narrower for better focus */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    font-size: 1.1em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-us h1 {
+    font-size: 3em;
+    color: #007bff; /* Primary color for the heading */
+    margin-bottom: 25px;
+}
+
+.contact-us p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #555; /* Slightly lighter text for paragraphs */
+}
+
+/* Contact Form Styling */
+.contact-us form {
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch form elements to full width */
+}
+
+.contact-us label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #495057; /* Darker gray for labels */
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: border-color 0.3s ease;
+}
+
+.contact-us input[type="text"]:focus,
+.contact-us input[type="email"]:focus,
+.contact-us textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle focus shadow */
+}
+
+.contact-us textarea {
+    min-height: 180px;
+}
+
+.contact-us button[type="submit"] {
+    background-color: #28a745; /* Bootstrap success color */
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us button[type="submit"]:hover {
+    background-color: #1e7e34; /* Darker shade on hover */
+}
+
+/* Contact Details Styling */
+.contact-us h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-us h2 + p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-us h2 + p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-us h2 + p a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Darker background */
+    color: #e9ecef; /* Lighter text */
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle top shadow */
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e9ecef;
+    text-decoration: underline;
+}

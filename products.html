@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse cars for sale at AutoWheels">
+    <title>Cars for Sale - AutoWheels</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+
+        function purchaseCar(title, price) {
+            alert(`Thank you for your interest in the ${title}! A representative will contact you shortly to discuss the purchase process for $${price}.`);
+            // In a real application, this would trigger a more complex purchase flow.
+        }
+    </script>
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <nav class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="products.html">Cars for Sale</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cars-for-sale py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Our Cars for Sale</h1>
+            <div class="row">
+                <script>
+                    const cars = [
+                        {id: 1, img: "car1.jpg", title: "2024 BMW 3 Series", price: "$45,000", features: "Leather seats, Sunroof, Bluetooth, Rearview Camera"},
+                        {id: 2, img: "car2.jpg", title: "2020 Toyota Camry", price: "$22,000", features: "Backup camera, Lane assist, Keyless entry"},
+                        {id: 3, img: "car3.jpg", title: "2018 Honda Accord", price: "$18,000", features: "Touchscreen, Cruise control, Heated seats"},
+                        {id: 4, img: "car4.jpg", title: "2021 Tesla Model 3", price: "$50,000", features: "Autopilot, Long Range Battery, Touchscreen"},
+                        {id: 5, img: "car5.jpg", title: "2019 Ford Mustang", price: "$35,000", features: "V8 Engine, Sport Mode, Convertible"},
+                        {id: 6, img: "car6.jpg", title: "2017 Chevrolet Malibu", price: "$16,500", features: "Fuel Efficient, Apple CarPlay, Lane Assist"},
+                        {id: 7, img: "car7.jpg", title: "2022 Mercedes-Benz C-Class", price: "$55,000", features: "Luxury Interior, Panoramic Roof, AI Voice Assistant"},
+                        {id: 8, img: "car8.jpg", title: "2023 Hyundai Sonata", price: "$28,000", features: "Hybrid Option, Wireless Charging, Blind Spot Detection"},
+                        {id: 9, img: "car9.jpg", title: "2015 Jeep Wrangler", price: "$20,000", features: "Off-Road Capable, 4WD, Detachable Roof"},
+                        {id: 10, img: "car10.jpg", title: "2023 Audi A4", price: "$48,000", features: "Quattro AWD, LED Headlights, Navigation System"}
+                    ];
+                </script>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const container = document.querySelector(".row");
+                        cars.forEach(car => {
+                            container.innerHTML += `
+                                <div class="col-sm-6 col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="${car.img}" class="card-img-top" alt="${car.title}">
+                                        <div class="card-body">
+                                            <h5 class="card-title">${car.title}</h5>
+                                            <p class="card-text">Price: ${car.price}</p>
+                                            <button onclick="toggleDetails('details-${car.id}')" class="btn btn-primary mb-2">View Details</button>
+                                            <p id="details-${car.id}" class="car-details" style="display: none; color: black;">${car.features}</p>
+                                            <button onclick="purchaseCar('${car.title}', '${car.price}')" class="btn btn-success">Purchase</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact us at <a href="mailto:info@autowheels.com" class="text-white">info@autowheels.com</a></p>
+    </footer>
+</body>
+</html>
